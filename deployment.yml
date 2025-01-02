@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: nodejs-app
+  labels:
+    app: nodejs-app
+spec: 
+  replicas: 2
+  selector: 
+    matchlabels: 
+      app: nodejs-app
+    template: 
+      metadata: 
+      labels:
+        app: nodejs-app
+      spec: 
+        containers: 
+        - name: nodejs-app
+          image: dockerhub-username/better
+          ports:
+          - containerPort: 8024
+  
