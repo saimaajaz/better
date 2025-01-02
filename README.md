@@ -50,14 +50,3 @@ This repository demonstrates a CI/CD pipeline for a Node.js application using Je
 
 ---
 
-## Folder Structure
-
-.
-├── Jenkinsfile             # Defines the CI/CD pipeline
-├── k8s/
-│   ├── deployment.yaml     # Kubernetes deployment manifest
-│   └── service.yaml        # Kubernetes service manifest
-├── package.json            # Node.js dependencies and scripts
-├── src/                    # Node.js application source code
-└── test/                   # Test files
-
